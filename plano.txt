@@ -1,0 +1,12 @@
+Objetivo: Criar uma api que disponibiliza a consulta,criacao edicao e exclusao de livros
+
+Url base: Localhost depois git pages
+
+endpoints: 
+        - Localhost/livros (Get)
+        - Localhost/livros/id (Get)
+        - Localhost/livros/id (Put)
+        - Localhost/livros/id (delete)
+        - Localhost/livros/id (Post)
+
+Recursos:
