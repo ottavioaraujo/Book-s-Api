@@ -1,4 +1,7 @@
 from flask import Flask, jsonify, request
+from database import inicializar_banco
+
+inicializar_banco()
 
 app = Flask(__name__)
 
