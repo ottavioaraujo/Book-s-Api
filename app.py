@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from database import inicializar_banco
 
 inicializar_banco()
@@ -26,6 +26,9 @@ livros = [
 #puxar um livro
 
 @app.route('/')
+def incio():
+    return render_template("index.html")
+    
 @app.route('/livros',methods=['GET'])
 def obter_livros():
     return jsonify(livros)
